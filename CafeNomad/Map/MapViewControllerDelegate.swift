@@ -11,36 +11,20 @@ import GoogleMaps
 
 extension MapViewController: GMSMapViewDelegate {
     
+    // Tap the marker then
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        self.mapView = mapView
+
         selectedMarker = marker
-        print(self.selectedMarker!)
-        
-        delegate?.addOneToTableView()
-        
-      
-//         self.detailTextLabel.insert(marker.snippet!, at:0)
-        
-        
+    // Find the shop information by checking through the array
         for shop in shops {
             if shop.name == marker.title {
                   self.textLabel.insert(marker.title!, at:0)
                 self.detailTextLabel.insert("Quiet:\(String(describing: shop.quiet!)) Food:\(String(describing: shop.tasty!)) Wifi:\(String(describing: shop.wifi!))", at:0)
-                
-                print(self.detailTextLabel)
+// send shop info to table view
                 performSegue(withIdentifier: PropertyKeys.unwindToPlaces, sender: marker)
-                print(textLabel)
-        
             }
-            
         }
-        
-        
-        
-        
-       
-        
-       
+ // return true if you want to close the marker after tap
         return false
     }
     

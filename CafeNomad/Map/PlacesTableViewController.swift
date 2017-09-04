@@ -12,9 +12,6 @@ import GoogleMaps
 
 class PlacesTableViewController: UITableViewController {
     
-   
-    
-    
     var likelyPlaces: [GMSPlace] = []
     var selectedPlace: GMSPlace?
     var selectedMarker: GMSMarker?
@@ -30,9 +27,6 @@ class PlacesTableViewController: UITableViewController {
             self.detailTextLabel = detailTextLabel
             self.tableView.reloadData()
         }
-        
-        
-        
     }
     
     override func viewDidLoad() {
@@ -50,9 +44,6 @@ class PlacesTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-  
-
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

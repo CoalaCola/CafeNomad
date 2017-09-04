@@ -16,7 +16,6 @@
 		5623081F1F4FF06100EDEB58 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5623081E1F4FF06100EDEB58 /* ShopTableViewController.swift */; };
 		5687CE581F5C5183004E04E5 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */; };
 		5687CE5B1F5D00AB004E04E5 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */; };
-		5687CE5F1F5D195B004E04E5 /* ShopDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */; };
 		56EC361C1F5C0A96002300B1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC361B1F5C0A96002300B1 /* MapViewController.swift */; };
 		6F2798DCDFB3149D23693415 /* Pods_CafeNomad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5D937DD5549B55A5DAFB1 /* Pods_CafeNomad.framework */; };
 /* End PBXBuildFile section */
@@ -35,7 +34,6 @@
 		5623081E1F4FF06100EDEB58 /* ShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
 		5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
-		5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDelagate.swift; sourceTree = "<group>"; };
 		56EC361B1F5C0A96002300B1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		EE8F054837B5B17F7A00B0A3 /* Pods-CafeNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNomad.release.xcconfig"; path = "Pods/Target Support Files/Pods-CafeNomad/Pods-CafeNomad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +96,6 @@
 		5687CE591F5C5410004E04E5 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */,
 				56EC361B1F5C0A96002300B1 /* MapViewController.swift */,
 				5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */,
 				5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */,
@@ -238,7 +235,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5623081D1F4FF04300EDEB58 /* ShopResult.swift in Sources */,
-				5687CE5F1F5D195B004E04E5 /* ShopDelagate.swift in Sources */,
 				56EC361C1F5C0A96002300B1 /* MapViewController.swift in Sources */,
 				5623081F1F4FF06100EDEB58 /* ShopTableViewController.swift in Sources */,
 				5623081B1F4FF02700EDEB58 /* ShopController.swift in Sources */,
