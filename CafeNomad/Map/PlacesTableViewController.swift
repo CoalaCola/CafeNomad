@@ -1,26 +1,47 @@
 //
-//  ShopTableViewController.swift
+//  PlacesTableViewController.swift
 //  CafeNomad
 //
-//  Created by Vince Lee on 2017/8/25.
+//  Created by Vince Lee on 2017/9/3.
 //  Copyright © 2017年 Vince Lee. All rights reserved.
 //
 
 import UIKit
+import GooglePlaces
+import GoogleMaps
 
-class ShopTableViewController: UITableViewController {
-
-    var shops = [Shop]()
+class PlacesTableViewController: UITableViewController {
+    
+   
+    
+    
+    var likelyPlaces: [GMSPlace] = []
+    var selectedPlace: GMSPlace?
+    var selectedMarker: GMSMarker?
+    var textLabel = [String]()
+    var detailTextLabel = [String]()
+    
+    
+    @IBAction func unwindToPlacesTVC(segue: UIStoryboardSegue) {
+        let source = segue.source as? MapViewController
+        if let textLabel = source?.textLabel, let detailTextLabel = source?.detailTextLabel {
+            
+            self.textLabel = textLabel
+            self.detailTextLabel = detailTextLabel
+            self.tableView.reloadData()
+        }
+        
+        
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        ShopController.shared.fetchShop { (shops) in
-            if let shops = shops{
-                self.updateUI(shops: shops)
-            }
-        }
-        
+        tableView.reloadData()
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,12 +50,9 @@ class ShopTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
-    func updateUI(shops: [Shop]) {
-        DispatchQueue.main.async {
-            self.shops = shops
-            self.tableView.reloadData()
-        }
-    }
+  
+
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -42,38 +60,32 @@ class ShopTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
-    
-    
-    
-    func configure(cell: UITableViewCell, forItemAt indexPath: IndexPath) {
-        let shop = shops[indexPath.row]
-        cell.textLabel?.text = shop.name
-        cell.detailTextLabel?.text = shop.address
-    }
-   
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
-    {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ShopTitleLocation", for: indexPath)
-        
-        configure(cell: cell, forItemAt: indexPath)
-        return cell
-    }
-    
+
+
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return shops.count
+        return textLabel.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: PropertyKeys.placesCell, for: indexPath)
 
         // Configure the cell...
+        let textLabelItem = textLabel[indexPath.row]
+        let detailTextLabelItem = detailTextLabel[indexPath.row]
+        
+        cell.textLabel?.text = textLabelItem
+        cell.detailTextLabel?.text = detailTextLabelItem
+        
 
         return cell
     }
-    */
+    
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.

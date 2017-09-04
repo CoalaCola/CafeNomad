@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		562308091F4FEE6600EDEB58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 562308081F4FEE6600EDEB58 /* AppDelegate.swift */; };
-		5623080B1F4FEE6600EDEB58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5623080A1F4FEE6600EDEB58 /* ViewController.swift */; };
 		5623080E1F4FEE6600EDEB58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5623080C1F4FEE6600EDEB58 /* Main.storyboard */; };
 		562308101F4FEE6600EDEB58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5623080F1F4FEE6600EDEB58 /* Assets.xcassets */; };
 		562308131F4FEE6600EDEB58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 562308111F4FEE6600EDEB58 /* LaunchScreen.storyboard */; };
 		5623081B1F4FF02700EDEB58 /* ShopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5623081A1F4FF02700EDEB58 /* ShopController.swift */; };
 		5623081D1F4FF04300EDEB58 /* ShopResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5623081C1F4FF04300EDEB58 /* ShopResult.swift */; };
 		5623081F1F4FF06100EDEB58 /* ShopTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5623081E1F4FF06100EDEB58 /* ShopTableViewController.swift */; };
+		5687CE581F5C5183004E04E5 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */; };
+		5687CE5B1F5D00AB004E04E5 /* MapViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */; };
+		5687CE5F1F5D195B004E04E5 /* ShopDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */; };
+		56EC361C1F5C0A96002300B1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EC361B1F5C0A96002300B1 /* MapViewController.swift */; };
+		6F2798DCDFB3149D23693415 /* Pods_CafeNomad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38B5D937DD5549B55A5DAFB1 /* Pods_CafeNomad.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C03C5698901B4EA25832672 /* Pods-CafeNomad.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNomad.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CafeNomad/Pods-CafeNomad.debug.xcconfig"; sourceTree = "<group>"; };
+		38B5D937DD5549B55A5DAFB1 /* Pods_CafeNomad.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CafeNomad.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		562308051F4FEE6600EDEB58 /* CafeNomad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafeNomad.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		562308081F4FEE6600EDEB58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5623080A1F4FEE6600EDEB58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5623080D1F4FEE6600EDEB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5623080F1F4FEE6600EDEB58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		562308121F4FEE6600EDEB58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -28,6 +33,11 @@
 		5623081A1F4FF02700EDEB58 /* ShopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopController.swift; sourceTree = "<group>"; };
 		5623081C1F4FF04300EDEB58 /* ShopResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopResult.swift; sourceTree = "<group>"; };
 		5623081E1F4FF06100EDEB58 /* ShopTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopTableViewController.swift; sourceTree = "<group>"; };
+		5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
+		5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewControllerDelegate.swift; sourceTree = "<group>"; };
+		5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopDelagate.swift; sourceTree = "<group>"; };
+		56EC361B1F5C0A96002300B1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		EE8F054837B5B17F7A00B0A3 /* Pods-CafeNomad.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CafeNomad.release.xcconfig"; path = "Pods/Target Support Files/Pods-CafeNomad/Pods-CafeNomad.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F2798DCDFB3149D23693415 /* Pods_CafeNomad.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A27E99897C1B50704EB8837 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C03C5698901B4EA25832672 /* Pods-CafeNomad.debug.xcconfig */,
+				EE8F054837B5B17F7A00B0A3 /* Pods-CafeNomad.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		562307FC1F4FEE6600EDEB58 = {
 			isa = PBXGroup;
 			children = (
 				562308071F4FEE6600EDEB58 /* CafeNomad */,
 				562308061F4FEE6600EDEB58 /* Products */,
+				2A27E99897C1B50704EB8837 /* Pods */,
+				901A1BC087520FD4B2938D0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,16 +83,35 @@
 			isa = PBXGroup;
 			children = (
 				562308081F4FEE6600EDEB58 /* AppDelegate.swift */,
-				5623080A1F4FEE6600EDEB58 /* ViewController.swift */,
 				5623080C1F4FEE6600EDEB58 /* Main.storyboard */,
 				5623080F1F4FEE6600EDEB58 /* Assets.xcassets */,
 				562308111F4FEE6600EDEB58 /* LaunchScreen.storyboard */,
 				5623081C1F4FF04300EDEB58 /* ShopResult.swift */,
+				5687CE591F5C5410004E04E5 /* Map */,
 				5623081A1F4FF02700EDEB58 /* ShopController.swift */,
 				5623081E1F4FF06100EDEB58 /* ShopTableViewController.swift */,
 				562308141F4FEE6600EDEB58 /* Info.plist */,
 			);
 			path = CafeNomad;
+			sourceTree = "<group>";
+		};
+		5687CE591F5C5410004E04E5 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				5687CE5E1F5D195B004E04E5 /* ShopDelagate.swift */,
+				56EC361B1F5C0A96002300B1 /* MapViewController.swift */,
+				5687CE571F5C5183004E04E5 /* PlacesTableViewController.swift */,
+				5687CE5A1F5D00AB004E04E5 /* MapViewControllerDelegate.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		901A1BC087520FD4B2938D0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38B5D937DD5549B55A5DAFB1 /* Pods_CafeNomad.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 562308171F4FEE6600EDEB58 /* Build configuration list for PBXNativeTarget "CafeNomad" */;
 			buildPhases = (
+				C1860B85A3D4FC2483C74C08 /* [CP] Check Pods Manifest.lock */,
 				562308011F4FEE6600EDEB58 /* Sources */,
 				562308021F4FEE6600EDEB58 /* Frameworks */,
 				562308031F4FEE6600EDEB58 /* Resources */,
+				5A2A887C505230D3E214F19D /* [CP] Embed Pods Frameworks */,
+				083FA1B7A035D2E611799EB9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -140,16 +184,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		083FA1B7A035D2E611799EB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CafeNomad/Pods-CafeNomad-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A2A887C505230D3E214F19D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CafeNomad/Pods-CafeNomad-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1860B85A3D4FC2483C74C08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		562308011F4FEE6600EDEB58 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5623081D1F4FF04300EDEB58 /* ShopResult.swift in Sources */,
-				5623080B1F4FEE6600EDEB58 /* ViewController.swift in Sources */,
+				5687CE5F1F5D195B004E04E5 /* ShopDelagate.swift in Sources */,
+				56EC361C1F5C0A96002300B1 /* MapViewController.swift in Sources */,
 				5623081F1F4FF06100EDEB58 /* ShopTableViewController.swift in Sources */,
 				5623081B1F4FF02700EDEB58 /* ShopController.swift in Sources */,
 				562308091F4FEE6600EDEB58 /* AppDelegate.swift in Sources */,
+				5687CE581F5C5183004E04E5 /* PlacesTableViewController.swift in Sources */,
+				5687CE5B1F5D00AB004E04E5 /* MapViewControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +379,7 @@
 		};
 		562308181F4FEE6600EDEB58 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C03C5698901B4EA25832672 /* Pods-CafeNomad.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +395,7 @@
 		};
 		562308191F4FEE6600EDEB58 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE8F054837B5B17F7A00B0A3 /* Pods-CafeNomad.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

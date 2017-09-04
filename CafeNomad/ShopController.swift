@@ -19,9 +19,8 @@ class ShopController {
         let task = URLSession.shared.dataTask(with: url!) {
             (data, response, error) in
           let decoder = JSONDecoder()
-            let shop1 = try? decoder.decode([Shop].self, from: data!)
-            print(data)
-            print(shop1)
+            let shop = try? decoder.decode([Shop].self, from: data!)
+           
             if let data = data, let shop = try? decoder.decode([Shop].self, from: data) {
                 
                 completion(shop)

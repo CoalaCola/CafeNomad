@@ -9,19 +9,19 @@
 import Foundation
 
 struct Shop: Codable {
-    var id: String
-    var name: String
-    var city: String
-    var wifi: Int
-    var seat: Int
-    var quiet: Int
-    var tasty: Int
-    var cheap: Int
-    var music: Int
-    var url: URL?
+    var id: String?
+    var name: String?
+    var city: String?
+    var wifi: Double?
+    var seat: Double?
+    var quiet: Double?
+    var tasty: Double?
+    var cheap: Double?
+    var music: Double?
+    var url: String?
     var address: String?
-    var latitude: Double?
-    var longitude: Double?
+    var latitude: String?
+    var longitude: String?
     var limited_time: String?
     var socket: String?
     var standing_desk: String?
@@ -31,4 +31,9 @@ struct Shop: Codable {
     
 }
 
+struct PropertyKeys {
+    static let placesCell = "PlacesCell"
+    static let placesSegue = "PlacesSegue"
+    static let unwindToPlaces = "UnwindToPlaces"
+}
 
