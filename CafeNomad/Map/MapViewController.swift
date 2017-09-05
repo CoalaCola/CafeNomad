@@ -52,6 +52,7 @@ class MapViewController: UIViewController {
         
         mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
         mapView.settings.myLocationButton = true
+        
         mapView.settings.scrollGestures = true
         mapView.settings.compassButton = true
         mapView.isMyLocationEnabled = true
