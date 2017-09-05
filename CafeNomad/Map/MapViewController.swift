@@ -54,6 +54,7 @@ class MapViewController: UIViewController {
         mapView.settings.myLocationButton = true
         mapView.settings.scrollGestures = true
         mapView.settings.compassButton = true
+        mapView.isMyLocationEnabled = true
         
         mapView.settings.setAllGesturesEnabled(true)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
