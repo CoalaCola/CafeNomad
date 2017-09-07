@@ -19,7 +19,7 @@ extension MapViewController: GMSMapViewDelegate {
         for shop in shops {
             if shop.name == marker.title {
                   self.textLabel.insert(marker.title!, at:0)
-                self.detailTextLabel.insert("Quiet:\(String(describing: shop.quiet!)) 🍕:\(String(describing: shop.tasty!)) Wifi:\(String(describing: shop.wifi!))", at:0)
+                self.detailTextLabel.insert("💰:\(String(describing: shop.cheap!)) 🍕:\(String(describing: shop.tasty!)) 💻:\(String(describing: shop.wifi!))", at:0)
 // send shop info to table view
                 performSegue(withIdentifier: PropertyKeys.unwindToPlaces, sender: marker)
             }
