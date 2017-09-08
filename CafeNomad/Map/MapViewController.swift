@@ -32,7 +32,7 @@ class MapViewController: UIViewController {
     
     var shops = [Shop]()
     var markers = [GMSMarker]()
-    let defaultLocation = CLLocation(latitude: 25.039654, longitude: 121.549747)
+    let defaultLocation = CLLocation(latitude: 25.039654, longitude: 121.549746)
     
     
     override func viewDidLoad() {
